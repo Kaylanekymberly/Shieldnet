@@ -24,7 +24,7 @@
 |------------|--------|--------------|
 | 🇧🇷 **LGPD** (Lei Geral de Proteção de Dados) | ✅ Compliant | [Política de Privacidade](docs/PRIVACY_LGPD.md) |
 | 🇺🇸 **COPPA** (Children's Online Privacy Protection Act) | ✅ Compliant | [COPPA Compliance](docs/PRIVACY_COPPA.md) |
-| 🇪🇺 **GDPR** (General Data Protection Regulation) | 🚧 Em andamento | [Roadmap GDPR](docs/PRIVACY_GDPR.md) |
+| 🇪🇺 **GDPR** (General Data Protection Regulation) |  Em andamento | [Roadmap GDPR](docs/PRIVACY_GDPR.md) |
 
 ### Princípios de Privacy-by-Design
 -  **Minimização de Dados**: Coletamos apenas o essencial (palavras-chave bloqueadas, timestamps)
@@ -78,13 +78,13 @@ gantt
 <summary><b>🔷 Curto Prazo (Sprint 1-2) - CONCLUÍDO ✅</b></summary>
 
 ### Objetivos Principais
-- ✅ Validar o conceito e engajamento inicial
-- ✅ Estabelecer presença digital profissional
-- ✅ Implementar funcionalidades core de bloqueio
+-  Validar o conceito e engajamento inicial
+-  Estabelecer presença digital profissional
+-  Implementar funcionalidades core de bloqueio
 
 ### Entregas Realizadas
 
-#### 1. [✅ Landing Page Responsiva](https://shieldnet.vercel.app)
+#### 1. [ Landing Page Responsiva](https://shieldnet.vercel.app)
 **Código**: [`/landing-page`](https://shieldnetkay.my.canva.site) | **Deploy**: Vercel
 
 **Features Implementadas**:
@@ -99,7 +99,7 @@ gantt
 - 342 visitas únicas no primeiro mês
 - Taxa de conversão: 37.1% (visitante → cadastro)
 
-#### 2. [✅ Sistema de Bloqueio por Palavras-Chave](src/content-scripts/blocker.js)
+#### 2. [ Sistema de Bloqueio por Palavras-Chave](src/content-scripts/blocker.js)
 **Código**: [`/src/content-scripts`](src/content-scripts/)
 
 **Funcionalidades**:
@@ -120,24 +120,24 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 ```
 
-#### 3. [✅ Infraestrutura e Documentação](docs/)
+#### 3. [ Infraestrutura e Documentação](docs/)
 **Estrutura do Repositório**:
 ```
 shieldnet/
 ├── docs/
-│   ├── PRIVACY_LGPD.md          ✅ Política LGPD completa
-│   ├── PRIVACY_COPPA.md         ✅ Conformidade COPPA
-│   ├── ARCHITECTURE.md          ✅ Diagrama de arquitetura
+│   ├── PRIVACY_LGPD.md           Política LGPD completa
+│   ├── PRIVACY_COPPA.md          Conformidade COPPA
+│   ├── ARCHITECTURE.md           Diagrama de arquitetura
 │   └── images/
 │       ├── banner.png
 │       └── roadmap/
 ├── src/
-│   ├── background/              ✅ Service Worker (Manifest V3)
-│   ├── content-scripts/         ✅ Injeção de bloqueio
-│   └── popup/                   ✅ Interface da extensão
-├── landing-page/                ✅ Site institucional
-├── tests/                       ✅ Testes unitários (Jest)
-└── README.md                    ✅ Documentação principal
+│   ├── background/               Service Worker (Manifest V3)
+│   ├── content-scripts/          Injeção de bloqueio
+│   └── popup/                    Interface da extensão
+├── landing-page/                 Site institucional
+├── tests/                        Testes unitários (Jest)
+└── README.md                     Documentação principal
 ```
 
 **Versionamento Semântico**: `v0.2.1` (seguindo [SemVer](https://semver.org/))
@@ -150,13 +150,13 @@ shieldnet/
 <summary><b>🔶 Médio Prazo (Sprint 3-5) - EM ANDAMENTO 🚧</b></summary>
 
 ### Objetivos Principais
-- 🎯 Criar experiência de configuração completa e intuitiva
-- 🎯 Validar com 50+ famílias beta testers
-- 🎯 Reduzir falsos positivos em 60%
+-  Criar experiência de configuração completa e intuitiva
+-  Validar com 50+ famílias beta testers
+-  Reduzir falsos positivos em 60%
 
 ### Entregas Planejadas
 
-#### 1. 🚧 Painel de Configurações da Extensão
+#### 1.  Painel de Configurações da Extensão
 **Prazo**: 28 de janeiro de 2026 | **Progresso**: 40% concluído
 
 **Features em Desenvolvimento**:

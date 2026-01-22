@@ -147,7 +147,7 @@ shieldnet/
 ---
 
 <details>
-<summary><b>🔶 Médio Prazo (Sprint 3-5) - EM ANDAMENTO 🚧</b></summary>
+<summary><b>🔶 Médio Prazo (Sprint 3-5) - EM ANDAMENTO </b></summary>
 
 ### Objetivos Principais
 -  Criar experiência de configuração completa e intuitiva

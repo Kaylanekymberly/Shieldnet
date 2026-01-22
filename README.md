@@ -9,7 +9,7 @@
 
 ## 🗺️ Planejamento e Visão de Futuro
 O ShieldNet possui um roadmap estratégico focado em segurança e escalabilidade.
-* **Fase Atual:** Sprint 3-5 (Painel de Configurações e Sistema de Relatórios) 🚧
+* **Fase Atual:** Sprint 3-5 (Painel de Configurações e Sistema de Relatórios) 
 * **Destaque:** Total conformidade com LGPD e COPPA.
 
-👉 [Clique aqui para ver o Roadmap Detalhado, Métricas e Stack Técnica Completa](./docs/images/roadmap/README.md)
+ [Clique aqui para ver o Roadmap Detalhado, Métricas e Stack Técnica Completa](./docs/images/roadmap/README.md)

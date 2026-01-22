@@ -95,7 +95,7 @@ gantt
 - SEO completo: Meta tags, Open Graph, Schema.org
 
 **Métricas Alcançadas**:
-- 127 emails coletados (meta: 50) 📈 **+154%**
+- 127 emails coletados (meta: 50)  **+154%**
 - 342 visitas únicas no primeiro mês
 - Taxa de conversão: 37.1% (visitante → cadastro)
 
@@ -194,35 +194,35 @@ interface Settings {
 const [settings, setSettings] = useLocalStorage<Settings>('shieldnet_config');
 ```
 
-#### 2. 📊 Sistema de Relatórios para Responsáveis
+#### 2.  Sistema de Relatórios para Responsáveis
 **Prazo**: 5 de fevereiro de 2026 | **Progresso**: 15% concluído
 
 **Dashboards Planejados**:
-- [ ] **Visão Geral**: Cards com métricas principais
+-  **Visão Geral**: Cards com métricas principais
   - Total de bloqueios (hoje/semana/mês)
   - Sites mais acessados
   - Horários de maior atividade
-- [ ] **Linha do Tempo**: Histórico detalhado de tentativas
+-  **Linha do Tempo**: Histórico detalhado de tentativas
   - Timestamp, URL, categoria detectada
   - Contexto da página (título, snippet)
-- [ ] **Gráficos Interativos** (Chart.js):
+-  **Gráficos Interativos** (Chart.js):
   - Bloqueios por categoria (pizza)
   - Atividade por horário (barras)
   - Tendências semanais (linha)
-- [ ] **Exportação**:
+-  **Exportação**:
   - PDF com relatório mensal automático
   - CSV para análise externa
-- [ ] **Alertas Opcionais**:
+-  **Alertas Opcionais**:
   - Email para responsável em bloqueios críticos
   - Notificação push (futura versão mobile)
 
 **Wireframe**: [Ver protótipo](docs/wireframes/reports-dashboard.png)
 
-#### 3. 🧪 Melhorias na Detecção de Conteúdo
+#### 3. Melhorias na Detecção de Conteúdo
 **Prazo**: 15 de fevereiro de 2026
 
 **Algoritmos em Desenvolvimento**:
-- [ ] **Análise de Contexto**:
+-  **Análise de Contexto**:
   ```javascript
   // Evitar falso positivo em "assassin's creed" (jogo)
   const context = analyzeSurroundingText(keyword, 50); // 50 chars antes/depois
@@ -230,21 +230,21 @@ const [settings, setSettings] = useLocalStorage<Settings>('shieldnet_config');
     return { block: false, reason: "safe_context" };
   }
   ```
-- [ ] **Variações de Escrita**:
+-  **Variações de Escrita**:
   - Detecção de leet speak: `@ss` → `ass`, `dr0g@s` → `drogas`
   - Normalização Unicode: `ｓｅｘ` (fullwidth) → `sex`
   - Espaçamento malicioso: `d r o g a s` → `drogas`
-- [ ] **Whitelist Inteligente**:
+-  **Whitelist Inteligente**:
   - Sites educacionais automáticos (Wikipedia, Khan Academy)
   - Domínios governamentais (.gov.br, .gov)
   - Bibliotecas acadêmicas (Scielo, PubMed)
-- [ ] **Análise de Imagens** (MVP):
+-  **Análise de Imagens** (MVP):
   - OCR com Tesseract.js em memes/screenshots
   - Detecção básica de nudez (via TensorFlow.js + NSFW model)
 
 **Meta de Acurácia**: 85% precision, 90% recall (medido com dataset de 1000 páginas)
 
-#### 4. 👥 Programa de Beta Testing
+#### 4.  Programa de Beta Testing
 **Prazo**: 21 de fevereiro de 2026
 
 **Fases do Programa**:
@@ -272,19 +272,18 @@ const [settings, setSettings] = useLocalStorage<Settings>('shieldnet_config');
 
 </details>
 
----
 
 <details>
-<summary><b>🔴 Longo Prazo (Sprint 6-10) - PLANEJADO 📅</b></summary>
+<summary><b> Longo Prazo (Sprint 6-10) - PLANEJADO </b></summary>
 
 ### Objetivos Principais
-- 🚀 Integrar inteligência artificial de ponta
-- 🌍 Escalar para 10.000+ usuários ativos
-- 💰 Estabelecer modelo de negócio sustentável
+-  Integrar inteligência artificial de ponta
+-  Escalar para 10.000+ usuários ativos
+-  Estabelecer modelo de negócio sustentável
 
 ### Entregas Futuras
 
-#### 1. 🤖 Integração com IA (Claude/GPT-4)
+#### 1.  Integração com IA (Claude/GPT-4)
 **Prazo**: 15 de abril de 2026 | **Investimento**: $500-800/mês (APIs)
 
 **Capacidades de IA Planejadas**:
@@ -328,29 +327,29 @@ const response = await fetch("https://api.anthropic.com/v1/messages", {
 
 **Estimativa**: 1M de páginas analisadas/mês = $600 (com cache agressivo)
 
-#### 2. 🏪 Publicação na Chrome Web Store
+#### 2.  Publicação na Chrome Web Store
 **Prazo**: 15 de maio de 2026
 
 **Checklist Completo** (22 itens):
 
 ##### Documentação Legal
-- [x] Política de Privacidade LGPD ([ver](docs/PRIVACY_LGPD.md))
-- [x] Política de Privacidade COPPA ([ver](docs/PRIVACY_COPPA.md))
-- [ ] Política de Privacidade GDPR
-- [ ] Termos de Uso detalhados (modelo aprovado por advogado)
-- [ ] Política de Cookies e Tracking
+-  Política de Privacidade LGPD ([ver](docs/PRIVACY_LGPD.md))
+-  Política de Privacidade COPPA ([ver](docs/PRIVACY_COPPA.md))
+-  Política de Privacidade GDPR
+-  Termos de Uso detalhados (modelo aprovado por advogado)
+-  Política de Cookies e Tracking
 
 ##### Assets Visuais
-- [ ] Ícone 16x16px (toolbar)
-- [ ] Ícone 48x48px (gerenciador de extensões)
-- [ ] Ícone 128x128px (Chrome Web Store)
-- [ ] Screenshot 1280x800px (mínimo 3, máximo 5):
+-  Ícone 16x16px (toolbar)
+-  Ícone 48x48px (gerenciador de extensões)
+-  Ícone 128x128px (Chrome Web Store)
+-  Screenshot 1280x800px (mínimo 3, máximo 5):
   1. Interface principal
   2. Dashboard de relatórios
   3. Configurações avançadas
   4. Página de bloqueio
   5. Painel responsivo (mobile simulation)
-- [ ] Vídeo promocional YouTube (30-60s):
+-  Vídeo promocional YouTube (30-60s):
   - Roteiro: [ver script](docs/marketing/video-script.md)
   - Produção profissional (Fiverr/Upwork: $150-300)
 
@@ -369,12 +368,12 @@ Descrição Completa (ver docs/chrome-store-description.md):
 ```
 
 ##### Testes Técnicos
-- [ ] Funcionamento em Chrome 120+ (última versão)
-- [ ] Compatibilidade com Chrome Beta/Dev
-- [ ] Teste em Windows 10/11, macOS, Linux
-- [ ] Zero erros no console do navegador
-- [ ] Manifest V3 100% compliant
-- [ ] Scan de segurança (VirusTotal)
+-  Funcionamento em Chrome 120+ (última versão)
+-  Compatibilidade com Chrome Beta/Dev
+-  Teste em Windows 10/11, macOS, Linux
+-  Zero erros no console do navegador
+-  Manifest V3 100% compliant
+-  Scan de segurança (VirusTotal)
 
 ##### Estratégia de Lançamento
 **Fase 1 - Soft Launch** (semana 1-2):
@@ -394,36 +393,36 @@ Descrição Completa (ver docs/chrome-store-description.md):
 
 **Meta de Reviews**: 50 avaliações com 4.5★+ nos primeiros 30 dias
 
-#### 3. 🤝 Parcerias Estratégicas
+#### 3.  Parcerias Estratégicas
 **Prazo**: Contínuo (início em março 2026)
 
 ##### Alvos Prioritários
 
 **Segmento Educação**:
-- [ ] 10 escolas particulares (SP, RJ, BH)
+-  10 escolas particulares (SP, RJ, BH)
   - Pitch: Pacote Enterprise com dashboard centralizado
   - Pricing: R$ 15/aluno/mês (desconto 40% vs. individual)
   - Garantia: 30 dias trial grátis
   
 **Segmento Social**:
-- [ ] Safernet Brasil (ONG referência)
-- [ ] Childhood Brasil
-- [ ] Instituto Alana
+-  Safernet Brasil (ONG referência)
+-  Childhood Brasil
+-  Instituto Alana
   - Proposta: Licença gratuita + co-branding
   - Contrapartida: Endosso institucional + divulgação
 
 **Segmento Saúde**:
-- [ ] Associação Brasileira de Psiquiatria Infantil
-- [ ] 20 psicólogos infantis (programa de afiliados)
+-  Associação Brasileira de Psiquiatria Infantil
+-  20 psicólogos infantis (programa de afiliados)
   - Comissão: 20% recorrente sobre indicações
   - Material: Flyers personalizados, email templates
 
 **Influenciadores**:
-- [ ] 5 influenciadores parentais (30k-100k followers)
+-  5 influenciadores parentais (30k-100k followers)
   - Formato: Review autêntico + código de desconto exclusivo
   - Budget: $200-500/influenciador (ou produto grátis vitalício)
 
-#### 4. 💼 Modelo de Negócio e Monetização
+#### 4.  Modelo de Negócio e Monetização
 **Prazo**: Implementação em junho 2026
 
 ##### Tier Freemium
@@ -460,48 +459,48 @@ Descrição Completa (ver docs/chrome-store-description.md):
 **Churn esperado**: 15% ao mês (média SaaS B2C)  
 **LTV/CAC alvo**: 3:1 (Lifetime Value / Customer Acquisition Cost)
 
-#### 5. 🚀 Expansão Técnica
+#### 5.  Expansão Técnica
 **Prazo**: 8-12 meses
 
 ##### Multi-Plataforma
-- [ ] **Firefox Add-on** (Q3 2026)
+-  **Firefox Add-on** (Q3 2026)
   - Adaptação do código (WebExtensions API compatível)
   - Submissão ao Firefox Add-ons
   
-- [ ] **Microsoft Edge** (Q3 2026)
+-  **Microsoft Edge** (Q3 2026)
   - Reutilização direta do código Chrome
   - Microsoft Edge Add-ons Store
   
-- [ ] **Mobile App** (Q4 2026)
+-  **Mobile App** (Q4 2026)
   - React Native + Expo
   - Sincronização via Firebase
   - Features extras: GPS tracking (opcional), screen time limiter
 
 ##### Funcionalidades Avançadas
-- [ ] **Integração com Roteadores**:
+-  **Integração com Roteadores**:
   - Parceria com TP-Link, D-Link
   - Bloqueio a nível de rede (toda casa protegida)
   
-- [ ] **Modo Offline**:
+-  **Modo Offline**:
   - Regras locais quando sem internet
   - Sincronização automática quando online
   
-- [ ] **Gamificação**:
+-  **Gamificação**:
   - Sistema de pontos por bom comportamento
   - Recompensas: +30 min de tela, desbloqueio temporário de site
   - Dashboard para crianças (transparência)
   
-- [ ] **Time Limits**:
+-  **Time Limits**:
   - Temporizador por site/categoria
   - Exemplo: Máx 1h/dia de redes sociais
   - Pausas obrigatórias (padrão 20-20-20)
 
 ##### Tecnologias Emergentes
-- [ ] **Blockchain** (experimento):
+-  **Blockchain** (experimento):
   - NFTs de "certificados de bom comportamento"
   - Registros imutáveis de configurações (prova para custódia legal?)
   
-- [ ] **Web3 Integration**:
+-  **Web3 Integration**:
   - Wallet para recompensas em cripto educacional
   - Smart contracts para parcerias com escolas
 
@@ -509,9 +508,9 @@ Descrição Completa (ver docs/chrome-store-description.md):
 
 ---
 
-## 📊 Métricas de Sucesso (KPIs)
+##  Métricas de Sucesso (KPIs)
 
-### Curto Prazo ✅
+### Curto Prazo 
 | Métrica | Meta | Alcançado | Status |
 |---------|------|-----------|--------|
 | Emails coletados | 50 | 127 | 🟢 +154% |
@@ -519,7 +518,7 @@ Descrição Completa (ver docs/chrome-store-description.md):
 | Bugs críticos | 0 | 0 | 🟢 100% |
 | Lighthouse Score | 90+ | 95 | 🟢 ✓ |
 
-### Médio Prazo 🚧
+### Médio Prazo 
 | Métrica | Meta | Atual | Prazo |
 |---------|------|-------|-------|
 | Usuários beta ativos | 50 | 12 | 21/02/26 |
@@ -528,7 +527,7 @@ Descrição Completa (ver docs/chrome-store-description.md):
 | Feedbacks coletados | 50 | 8 | 28/02/26 |
 | Acurácia detecção | 85% | 73% | 15/02/26 |
 
-### Longo Prazo 📅
+### Longo Prazo 
 | Métrica | Meta | Prazo |
 |---------|------|-------|
 | Instalações Chrome Store | 10.000 | Dez/2026 |
@@ -539,7 +538,7 @@ Descrição Completa (ver docs/chrome-store-description.md):
 
 ---
 
-## 🛠️ Stack Tecnológica Completa
+##  Stack Tecnológica Completa
 
 ### Frontend
 ```yaml
@@ -621,7 +620,7 @@ Testes:
 
 ---
 
-## 🚨 Gestão de Riscos
+## Gestão de Riscos
 
 | # | Risco | Probabilidade | Impacto | Mitigação | Responsável |
 |---|-------|---------------|---------|-----------|-------------|

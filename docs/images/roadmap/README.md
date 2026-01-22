@@ -15,9 +15,8 @@
 
 </div>
 
----
 
-## 🔒 Destaque de Segurança e Compliance
+##  Destaque de Segurança e Compliance
 
 > **PRIORIDADE MÁXIMA**: Como trabalhamos com dados de menores de idade, a conformidade legal é não-negociável.
 
@@ -28,18 +27,18 @@
 | 🇪🇺 **GDPR** (General Data Protection Regulation) | 🚧 Em andamento | [Roadmap GDPR](docs/PRIVACY_GDPR.md) |
 
 ### Princípios de Privacy-by-Design
-- ✅ **Minimização de Dados**: Coletamos apenas o essencial (palavras-chave bloqueadas, timestamps)
-- ✅ **Processamento Local**: Análise de conteúdo ocorre no navegador (zero envio para servidores)
-- ✅ **Consentimento Parental**: Termo de aceite obrigatório antes da instalação
-- ✅ **Direito ao Esquecimento**: Remoção completa de dados em até 48h mediante solicitação
-- ✅ **Criptografia**: Dados sensíveis criptografados com AES-256
-- ✅ **Auditoria**: Logs imutáveis de acesso a dados pessoais
+-  **Minimização de Dados**: Coletamos apenas o essencial (palavras-chave bloqueadas, timestamps)
+-  **Processamento Local**: Análise de conteúdo ocorre no navegador (zero envio para servidores)
+-  **Consentimento Parental**: Termo de aceite obrigatório antes da instalação
+-  **Direito ao Esquecimento**: Remoção completa de dados em até 48h mediante solicitação
+-  **Criptografia**: Dados sensíveis criptografados com AES-256
+-  **Auditoria**: Logs imutáveis de acesso a dados pessoais
 
-📄 **Documentos Legais**: [Termos de Uso](docs/TERMS.md) | [Política de Cookies](docs/COOKIES.md)
+ **Documentos Legais**: [Termos de Uso](docs/TERMS.md) | [Política de Cookies](docs/COOKIES.md)
 
 ---
 
-## 🎯 Visão Geral do Projeto
+##  Visão Geral do Projeto
 
 **ShieldNet** é uma extensão Chrome que oferece controle parental inteligente através de:
 - Bloqueio de conteúdo inadequado em tempo real
@@ -51,7 +50,7 @@
 
 ---
 
-## 📋 Progresso do Roadmap
+##  Progresso do Roadmap
 
 ```mermaid
 gantt
@@ -86,7 +85,7 @@ gantt
 ### Entregas Realizadas
 
 #### 1. [✅ Landing Page Responsiva](https://shieldnet.vercel.app)
-**Código**: [`/landing-page`](landing-page/) | **Deploy**: Vercel
+**Código**: [`/landing-page`](https://shieldnetkay.my.canva.site) | **Deploy**: Vercel
 
 **Features Implementadas**:
 - Design moderno com Tailwind CSS e animações suaves

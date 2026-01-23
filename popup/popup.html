@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escudo Digital</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">🛡️</div>
+      <h1>Escudo Digital</h1>
+      <p class="version">v1.0.0</p>
+    </div>
+    
+    <div class="stats-card">
+      <div class="stat">
+        <div class="stat-number" id="blockCount">0</div>
+        <div class="stat-label">Conteúdos Bloqueados</div>
+      </div>
+    </div>
+    
+    <div class="toggle-section">
+      <label class="toggle">
+        <input type="checkbox" id="toggleEnabled" checked>
+        <span class="slider"></span>
+      </label>
+      <div class="toggle-label">
+        <strong>Proteção Ativada</strong>
+        <p id="statusText">Filtrando conteúdo inadequado</p>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <button id="resetBtn" class="btn">Resetar Estatísticas</button>
+    </div>
+    
+    <div class="footer">
+      <p>© 2024 Kaylane K. S. Martins</p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

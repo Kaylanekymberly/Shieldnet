@@ -1,0 +1,39 @@
+{
+  "blocklist": [
+    {
+      "name": "thiago schutz",
+      "id": "@thiagoschutz",
+      "reason": "Autor Red Pill 2.0, conteúdo central RP"
+    },
+    {
+      "name": "rafael aires",
+      "id": "@rafaelaires",
+      "reason": "Antiotário, coach red pill"
+    },
+    {
+      "name": "homemcast",
+      "id": "@homemcast",
+      "reason": "Podcast red pill brasileiro"
+    },
+    {
+      "name": "junior masters",
+      "id": "@juniormasters",
+      "reason": "Co-criador Redcast"
+    },
+    {
+      "name": "manual do redp",
+      "id": "@manualdoredp",
+      "reason": "Canal red pill brasileiro"
+    },
+    {
+      "name": "redpill avançado",
+      "id": "@redpillavancado",
+      "reason": "Conteúdo red pill central"
+    },
+    {
+      "name": "thalis gomes",
+      "id": "@thalisgomes",
+      "reason": "Coach masculino com elementos RP"
+    }
+  ]
+}

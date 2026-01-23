@@ -1,30 +1,26 @@
 # Roadmap do ShieldNet 🛡️
 
-<div align="center">
-
-![ShieldNet Banner](docs/images/banner.png)
+![Status](https://img.shields.io/badge/Status-Sprint%202%20Concluída-success)
+![Version](https://img.shields.io/badge/Version-0.2.1-green)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![LGPD](https://img.shields.io/badge/LGPD-Compliant-brightgreen)
+![COPPA](https://img.shields.io/badge/COPPA-Compliant-brightgreen)
 
 **Proteção Digital Inteligente para Crianças e Adolescentes**
 
-[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](https://github.com/seuusuario/shieldnet)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![LGPD Compliant](https://img.shields.io/badge/LGPD-Compliant-green)](docs/PRIVACY.md)
-[![COPPA Compliant](https://img.shields.io/badge/COPPA-Compliant-green)](docs/PRIVACY.md)
+[🌐 Landing Page](#) • [📖 Documentação](#) • [🐛 Reportar Bug](#) • [💬 Discord Community](#)
 
-[🌐 Landing Page](https://shieldnet.vercel.app) • [📖 Documentação](docs/) • [🐛 Reportar Bug](https://github.com/seuusuario/shieldnet/issues)
-
-</div>
-
+---
 
 ##  Destaque de Segurança e Compliance
 
-> **PRIORIDADE MÁXIMA**: Como trabalhamos com dados de menores de idade, a conformidade legal é não-negociável.
+**PRIORIDADE MÁXIMA**: Como trabalhamos com dados de menores de idade, a conformidade legal é não-negociável.
 
 | Legislação | Status | Documentação |
-|------------|--------|--------------|
-| 🇧🇷 **LGPD** (Lei Geral de Proteção de Dados) | ✅ Compliant | [Política de Privacidade](docs/PRIVACY_LGPD.md) |
-| 🇺🇸 **COPPA** (Children's Online Privacy Protection Act) | ✅ Compliant | [COPPA Compliance](docs/PRIVACY_COPPA.md) |
-| 🇪🇺 **GDPR** (General Data Protection Regulation) |  Em andamento | [Roadmap GDPR](docs/PRIVACY_GDPR.md) |
+|-----------|--------|--------------|
+| 🇧🇷 LGPD (Lei Geral de Proteção de Dados) |  Compliant | [Política de Privacidade](#) |
+| 🇺🇸 COPPA (Children's Online Privacy Protection Act) |  Compliant | [COPPA Compliance](#) |
+| 🇪🇺 GDPR (General Data Protection Regulation) |  Em andamento | [Roadmap GDPR](#) |
 
 ### Princípios de Privacy-by-Design
 -  **Minimização de Dados**: Coletamos apenas o essencial (palavras-chave bloqueadas, timestamps)
@@ -32,502 +28,172 @@
 -  **Consentimento Parental**: Termo de aceite obrigatório antes da instalação
 -  **Direito ao Esquecimento**: Remoção completa de dados em até 48h mediante solicitação
 -  **Criptografia**: Dados sensíveis criptografados com AES-256
--  **Auditoria**: Logs imutáveis de acesso a dados pessoais
+-  **Auditoria**: Logs imutáveis de acesso a dados pessoais (em desenvolvimento)
 
- **Documentos Legais**: [Termos de Uso](docs/TERMS.md) | [Política de Cookies](docs/COOKIES.md)
+[ Termos de Uso](#) | [ Política de Cookies](#)
 
 ---
 
 ##  Visão Geral do Projeto
 
 **ShieldNet** é uma extensão Chrome que oferece controle parental inteligente através de:
-- Bloqueio de conteúdo inadequado em tempo real
-- Monitoramento de atividades online (com transparência total)
-- Relatórios detalhados para responsáveis
-- Detecção assistida por IA (futuro)
+
+-  Bloqueio de conteúdo inadequado em tempo real
+-  Monitoramento de atividades online (com transparência total)
+-  Relatórios detalhados para responsáveis
+-  Detecção assistida por IA (planejado)
 
 **Diferencial Competitivo**: Combinação de tecnologia de ponta com respeito absoluto à privacidade das famílias.
 
----
 
 ##  Progresso do Roadmap
 
-```mermaid
-gantt
-    title Cronograma de Desenvolvimento ShieldNet
-    dateFormat  YYYY-MM-DD
-    section Curto Prazo
-    Landing Page           :done,    cp1, 2025-11-01, 2025-11-15
-    Bloqueio Keywords      :done,    cp2, 2025-11-10, 2025-11-30
-    Documentação Inicial   :done,    cp3, 2025-11-20, 2025-12-05
-    
-    section Médio Prazo
-    Painel Configurações   :active,  mp1, 2026-01-01, 2026-01-28
-    Sistema Relatórios     :         mp2, 2026-01-15, 2026-02-05
-    Testes Beta            :         mp3, 2026-02-01, 2026-02-21
-    
-    section Longo Prazo
-    Integração IA          :         lp1, 2026-03-01, 2026-04-15
-    Chrome Web Store       :         lp2, 2026-04-01, 2026-05-15
-    Parcerias              :         lp3, 2026-05-01, 2026-08-01
-```
+### 🟢 Curto Prazo (Sprint 1-2) - **100% CONCLUÍDO** ✅
+
+#### Entregas Realizadas
+
+- [x] **Infraestrutura Base**
+  -  Estrutura de pastas profissional (`background/`, `content-scripts/`, `popup/`, `assets/`)
+  -  Manifest V3 configurado corretamente
+  -  TypeScript + Vite configurados
+  -  ESLint + Prettier implementados
+
+- [x] **Sistema de Keywords**
+  -  Base de dados inicial com 3 níveis de proteção (level1, level2, level3)
+  -  Arquivo `keywords.json` estruturado e validado
+  -  Categorização por severidade implementada
+
+- [x] **Integração Git/GitHub**
+  -  Repositório remoto configurado
+  -  Fluxo de trabalho com branches (`main`, `develop`)
+  -  Boas práticas de commit (`feat:`, `fix:`, `docs:`)
+  -  Merge bem-sucedido de 12 arquivos principais
+
+- [x] **Documentação Técnica**
+  -  README.md profissional com badges
+  -  Documentação de arquitetura
+  -  Guia de contribuição
+
+- [x] **Landing Page**
+  -  Design responsivo implementado
+  -  Lighthouse Score: 95/100
+  -  Formulário de captura de emails funcional
 
 ---
 
-<details>
-<summary><b>🔷 Curto Prazo (Sprint 1-2) - CONCLUÍDO ✅</b></summary>
+### 🟡 Médio Prazo (Sprint 3-5) - **EM ANDAMENTO** (50% Completo)
 
-### Objetivos Principais
--  Validar o conceito e engajamento inicial
--  Estabelecer presença digital profissional
--  Implementar funcionalidades core de bloqueio
+**Data de Início**: 24/01/2026  
+**Previsão de Conclusão**: 21/02/2026
 
-### Entregas Realizadas
+####  Tasks Ativas
 
-#### 1. [ Landing Page Responsiva](https://shieldnet.vercel.app)
-**Código**: [`/landing-page`](https://shieldnetkay.my.canva.site) | **Deploy**: Vercel
+- [x] **Painel de Configurações** - 50% concluído
+  -  Estrutura base do `popup/` criada
+  -  Manifest.json com permissões configuradas
+  -  Interface de usuário (UI) em desenvolvimento
+  -  Integração com chrome.storage pendente
 
-**Features Implementadas**:
-- Design moderno com Tailwind CSS e animações suaves
-- Seções estratégicas: Hero, Funcionalidades, Depoimentos, FAQ, CTA
-- Formulário de early access integrado (Google Sheets API)
-- Performance otimizada: Lighthouse Score **95/100**
-- SEO completo: Meta tags, Open Graph, Schema.org
+- [ ] **Lógica de Bloqueio Ativo** - 30% concluído
+  -  Content scripts estruturados
+  -  Função de escuta de digitação em desenvolvimento
+  -  Comparação com keywords.json pendente
+  -  Sistema de alertas visuais pendente
 
-**Métricas Alcançadas**:
-- 127 emails coletados (meta: 50)  **+154%**
-- 342 visitas únicas no primeiro mês
-- Taxa de conversão: 37.1% (visitante → cadastro)
+- [ ] **Monitoramento de Navegação** - 20% concluído
+  -  Background script base criado
+  -  Interceptação de webRequest em desenvolvimento
+  -  Análise de URLs em tempo real pendente
+  -  Log de atividades pendente
 
-#### 2. [ Sistema de Bloqueio por Palavras-Chave](src/content-scripts/blocker.js)
-**Código**: [`/src/content-scripts`](src/content-scripts/)
+- [ ] **Relatórios para Responsáveis** - 10% concluído
+  -  Estrutura de dados planejada
+  -  Dashboard de visualização pendente
+  -  Exportação de relatórios (PDF/CSV) pendente
 
-**Funcionalidades**:
-- Detecção em tempo real de conteúdo inadequado (< 50ms latência)
-- Lista customizável de 150+ keywords pré-configuradas
-- Categorias: Violência, Drogas, Conteúdo Adulto, Cyberbullying
-- [Página de aviso personalizada](src/blocked-page.html) ao usuário
-- Logs locais de tentativas (Chrome Storage API)
+####  Próximas Metas Técnicas (Semana 25/01 - 31/01)
 
-**Tecnologias**:
-```javascript
-// Exemplo de implementação
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  if (request.action === "checkContent") {
-    const isBlocked = detectInappropriateContent(request.text);
-    sendResponse({ blocked: isBlocked, category: "violence" });
-  }
-});
-```
+1. **Implementar Listener de Input** (`content-scripts/content.ts`)
+   ```typescript
+   // Escutar todos os inputs de texto do usuário
+   document.addEventListener('input', (e) => {
+     const text = (e.target as HTMLInputElement).value;
+     checkAgainstKeywords(text);
+   });
+   ```
 
-#### 3. [ Infraestrutura e Documentação](docs/)
-**Estrutura do Repositório**:
-```
-shieldnet/
-├── docs/
-│   ├── PRIVACY_LGPD.md           Política LGPD completa
-│   ├── PRIVACY_COPPA.md          Conformidade COPPA
-│   ├── ARCHITECTURE.md           Diagrama de arquitetura
-│   └── images/
-│       ├── banner.png
-│       └── roadmap/
-├── src/
-│   ├── background/               Service Worker (Manifest V3)
-│   ├── content-scripts/          Injeção de bloqueio
-│   └── popup/                    Interface da extensão
-├── landing-page/                 Site institucional
-├── tests/                        Testes unitários (Jest)
-└── README.md                     Documentação principal
-```
+2. **Criar Função de Comparação** (`content-scripts/keyword-matcher.ts`)
+   - Carregar keywords.json via chrome.storage
+   - Implementar algoritmo de matching eficiente
+   - Detectar variações (l33t speak, espaços extras)
+   - ** Usar `fast-levenshtein`** para distância de edição (detecta "drooga", "dr0ga", erros de digitação)
+   - ** Implementar debounce (300ms)** para não travar digitação em PCs lentos
 
-**Versionamento Semântico**: `v0.2.1` (seguindo [SemVer](https://semver.org/))
-
-</details>
+3. **Sistema de Bloqueio Visual**
+   - Modal de aviso quando keyword detectada
+   - Opção de override para falsos positivos
+   - Notificação para o responsável
 
 ---
 
-<details>
-<summary><b>🔶 Médio Prazo (Sprint 3-5) - EM ANDAMENTO </b></summary>
+###  Longo Prazo (Sprint 6-10) - **PLANEJADO**
 
-### Objetivos Principais
--  Criar experiência de configuração completa e intuitiva
--  Validar com 50+ famílias beta testers
--  Reduzir falsos positivos em 60%
+**Data Prevista**: Março - Dezembro 2026
 
-### Entregas Planejadas
+#### Funcionalidades Avançadas
 
-#### 1.  Painel de Configurações da Extensão
-**Prazo**: 28 de janeiro de 2026 | **Progresso**: 40% concluído
+- [ ] **Detecção por IA**
+  - ** PRIORIDADE: Gemini Nano (Chrome Built-in AI)** - Roda no navegador, custo $0, reforça "Processamento Local"
+  - Fallback: Anthropic Claude API (apenas quando Gemini Nano indisponível)
+  - OpenAI GPT-4 (último recurso)
+  - Análise semântica de contexto
+  - Detecção de cyberbullying
+  - Cache inteligente (Redis) - apenas para APIs externas
 
-**Features em Desenvolvimento**:
-- [x] Interface base com React + TypeScript
-- [x] Integração com Chrome Storage Sync API
-- [ ] Sistema de categorias de palavras-chave
-  - [ ] Violência (🔴 Alta, 🟡 Média, 🟢 Baixa severidade)
-  - [ ] Drogas e substâncias
-  - [ ] Conteúdo adulto
-  - [ ] Cyberbullying
-- [ ] Toggle de ativação por categoria
-- [ ] Níveis de proteção predefinidos:
-  - **Básico**: Apenas conteúdo explícito
-  - **Moderado**: Inclui linguagem agressiva
-  - **Restritivo**: Máxima proteção
-- [ ] Importação/exportação de configurações (JSON)
-- [ ] Sincronização entre dispositivos (Chrome Sync)
+- [ ] **Dashboard Web**
+  - Portal para responsáveis (Next.js)
+  - Visualização de relatórios em tempo real
+  - Configurações remotas
+  - Multi-dispositivo
 
-**Protótipo Figma**: [Ver design](https://figma.com/shieldnet-settings)
+- [ ] **Versão Premium**
+  - Relatórios avançados
+  - IA sem limites
+  - Suporte prioritário
+  - Whitelist/Blacklist customizável
 
-**Stack Técnica**:
-```typescript
-// Exemplo de gerenciamento de estado
-interface Settings {
-  enabled: boolean;
-  level: 'basic' | 'moderate' | 'restrictive';
-  customKeywords: string[];
-  categories: {
-    violence: boolean;
-    drugs: boolean;
-    adult: boolean;
-  };
-}
-
-const [settings, setSettings] = useLocalStorage<Settings>('shieldnet_config');
-```
-
-#### 2.  Sistema de Relatórios para Responsáveis
-**Prazo**: 5 de fevereiro de 2026 | **Progresso**: 15% concluído
-
-**Dashboards Planejados**:
--  **Visão Geral**: Cards com métricas principais
-  - Total de bloqueios (hoje/semana/mês)
-  - Sites mais acessados
-  - Horários de maior atividade
--  **Linha do Tempo**: Histórico detalhado de tentativas
-  - Timestamp, URL, categoria detectada
-  - Contexto da página (título, snippet)
--  **Gráficos Interativos** (Chart.js):
-  - Bloqueios por categoria (pizza)
-  - Atividade por horário (barras)
-  - Tendências semanais (linha)
--  **Exportação**:
-  - PDF com relatório mensal automático
-  - CSV para análise externa
--  **Alertas Opcionais**:
-  - Email para responsável em bloqueios críticos
-  - Notificação push (futura versão mobile)
-
-**Wireframe**: [Ver protótipo](docs/wireframes/reports-dashboard.png)
-
-#### 3. Melhorias na Detecção de Conteúdo
-**Prazo**: 15 de fevereiro de 2026
-
-**Algoritmos em Desenvolvimento**:
--  **Análise de Contexto**:
-  ```javascript
-  // Evitar falso positivo em "assassin's creed" (jogo)
-  const context = analyzeSurroundingText(keyword, 50); // 50 chars antes/depois
-  if (context.isGameRelated || context.isEducational) {
-    return { block: false, reason: "safe_context" };
-  }
-  ```
--  **Variações de Escrita**:
-  - Detecção de leet speak: `@ss` → `ass`, `dr0g@s` → `drogas`
-  - Normalização Unicode: `ｓｅｘ` (fullwidth) → `sex`
-  - Espaçamento malicioso: `d r o g a s` → `drogas`
--  **Whitelist Inteligente**:
-  - Sites educacionais automáticos (Wikipedia, Khan Academy)
-  - Domínios governamentais (.gov.br, .gov)
-  - Bibliotecas acadêmicas (Scielo, PubMed)
--  **Análise de Imagens** (MVP):
-  - OCR com Tesseract.js em memes/screenshots
-  - Detecção básica de nudez (via TensorFlow.js + NSFW model)
-
-**Meta de Acurácia**: 85% precision, 90% recall (medido com dataset de 1000 páginas)
-
-#### 4.  Programa de Beta Testing
-**Prazo**: 21 de fevereiro de 2026
-
-**Fases do Programa**:
-1. **Recrutamento** (1-7 fev):
-   - 50 famílias via landing page
-   - Critérios: Crianças 8-16 anos, uso diário de internet
-   - Incentivo: 6 meses gratuitos da versão Premium
-   
-2. **Onboarding** (8-10 fev):
-   - Vídeo tutorial de instalação (< 3 min)
-   - Sessão Q&A ao vivo via Google Meet
-   - Canal exclusivo no Discord
-   
-3. **Coleta de Feedback** (11-21 fev):
-   - Formulário semanal (Google Forms)
-   - Sessões de usabilidade remotas (5 famílias, 30 min cada)
-   - Heatmaps com Hotjar na interface
-   
-4. **Análise e Iteração** (22-28 fev):
-   - Priorização de bugs críticos
-   - Ajustes de UX baseados em dados
-   - Release da v0.3.0 estável
-
-**Ferramenta de Feedback**: [Typeform Beta Survey](https://typeform.com/shieldnet-beta)
-
-</details>
-
-
-<details>
-<summary><b> Longo Prazo (Sprint 6-10) - PLANEJADO </b></summary>
-
-### Objetivos Principais
--  Integrar inteligência artificial de ponta
--  Escalar para 10.000+ usuários ativos
--  Estabelecer modelo de negócio sustentável
-
-### Entregas Futuras
-
-#### 1.  Integração com IA (Claude/GPT-4)
-**Prazo**: 15 de abril de 2026 | **Investimento**: $500-800/mês (APIs)
-
-**Capacidades de IA Planejadas**:
-
-##### a) Análise Semântica em Tempo Real
-```javascript
-// Substituir keywords fixas por análise contextual
-const response = await fetch("https://api.anthropic.com/v1/messages", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    model: "claude-sonnet-4-20250514",
-    max_tokens: 100,
-    messages: [{
-      role: "user",
-      content: `Analise se este conteúdo é apropriado para crianças de 12 anos: "${pageContent}". Responda apenas: {"safe": true/false, "reason": "...", "severity": 1-10}`
-    }]
-  })
-});
-```
-
-**Benefícios**:
-- Detecção de sarcasmo, duplo sentido, contexto cultural
-- Redução de 80% nos falsos positivos
-- Adaptação automática a novas gírias/termos
-
-##### b) Detector de Cyberbullying
-- Análise de tom em redes sociais (Twitter, Instagram DMs - se autorizado)
-- Identificação de padrões de assédio repetitivo
-- Alerta discreto para responsáveis sem invadir privacidade
-
-##### c) Recomendações Educativas Personalizadas
-- Se criança tenta acessar conteúdo violento → sugere documentários sobre paz
-- Se busca drogas → redireciona para campanhas de conscientização
-- Aprendizado contínuo com preferências da criança
-
-**Otimização de Custos**:
-- Cache local de análises (7 dias de TTL)
-- Batch processing: analisa conteúdo a cada 5s (não em cada palavra digitada)
-- Modelos locais TensorFlow.js para classificação básica (offline-first)
-
-**Estimativa**: 1M de páginas analisadas/mês = $600 (com cache agressivo)
-
-#### 2.  Publicação na Chrome Web Store
-**Prazo**: 15 de maio de 2026
-
-**Checklist Completo** (22 itens):
-
-##### Documentação Legal
--  Política de Privacidade LGPD ([ver](docs/PRIVACY_LGPD.md))
--  Política de Privacidade COPPA ([ver](docs/PRIVACY_COPPA.md))
--  Política de Privacidade GDPR
--  Termos de Uso detalhados (modelo aprovado por advogado)
--  Política de Cookies e Tracking
-
-##### Assets Visuais
--  Ícone 16x16px (toolbar)
--  Ícone 48x48px (gerenciador de extensões)
--  Ícone 128x128px (Chrome Web Store)
--  Screenshot 1280x800px (mínimo 3, máximo 5):
-  1. Interface principal
-  2. Dashboard de relatórios
-  3. Configurações avançadas
-  4. Página de bloqueio
-  5. Painel responsivo (mobile simulation)
--  Vídeo promocional YouTube (30-60s):
-  - Roteiro: [ver script](docs/marketing/video-script.md)
-  - Produção profissional (Fiverr/Upwork: $150-300)
-
-##### Descrição Otimizada
-```markdown
-Título (45 chars): ShieldNet - Controle Parental Inteligente
-
-Resumo (132 chars): Proteja seus filhos online com bloqueio de conteúdo inadequado, relatórios detalhados e IA. LGPD/COPPA compliant. 🛡️
-
-Descrição Completa (ver docs/chrome-store-description.md):
-- Primeiras 3 linhas críticas (aparecem sem "ver mais")
-- Keywords: controle parental, proteção infantil, bloqueio conteúdo
-- Bullet points claros com benefícios
-- Seção de segurança destacada
-- Call-to-action final
-```
-
-##### Testes Técnicos
--  Funcionamento em Chrome 120+ (última versão)
--  Compatibilidade com Chrome Beta/Dev
--  Teste em Windows 10/11, macOS, Linux
--  Zero erros no console do navegador
--  Manifest V3 100% compliant
--  Scan de segurança (VirusTotal)
-
-##### Estratégia de Lançamento
-**Fase 1 - Soft Launch** (semana 1-2):
-- Liberar para 100 usuários beta
-- Monitorar crash reports (Sentry)
-- Responder reviews em < 24h
-
-**Fase 2 - Growth Hack** (semana 3-4):
-- Product Hunt launch (preparar +100 upvotes)
-- Post no Reddit r/Parenting (seguir regras de cada sub)
-- Parcerias com 3 influenciadores parentais micro (5k-20k followers)
-
-**Fase 3 - Escala** (mês 2-3):
-- Google Ads ($300/mês, ROI esperado: 1:3)
-- Conteúdo SEO: "melhores extensões controle parental 2026"
-- Email marketing para 127 leads da landing page
-
-**Meta de Reviews**: 50 avaliações com 4.5★+ nos primeiros 30 dias
-
-#### 3.  Parcerias Estratégicas
-**Prazo**: Contínuo (início em março 2026)
-
-##### Alvos Prioritários
-
-**Segmento Educação**:
--  10 escolas particulares (SP, RJ, BH)
-  - Pitch: Pacote Enterprise com dashboard centralizado
-  - Pricing: R$ 15/aluno/mês (desconto 40% vs. individual)
-  - Garantia: 30 dias trial grátis
-  
-**Segmento Social**:
--  Safernet Brasil (ONG referência)
--  Childhood Brasil
--  Instituto Alana
-  - Proposta: Licença gratuita + co-branding
-  - Contrapartida: Endosso institucional + divulgação
-
-**Segmento Saúde**:
--  Associação Brasileira de Psiquiatria Infantil
--  20 psicólogos infantis (programa de afiliados)
-  - Comissão: 20% recorrente sobre indicações
-  - Material: Flyers personalizados, email templates
-
-**Influenciadores**:
--  5 influenciadores parentais (30k-100k followers)
-  - Formato: Review autêntico + código de desconto exclusivo
-  - Budget: $200-500/influenciador (ou produto grátis vitalício)
-
-#### 4.  Modelo de Negócio e Monetização
-**Prazo**: Implementação em junho 2026
-
-##### Tier Freemium
-**Free (Gratuito)**:
-- ✅ Bloqueio por 50 palavras-chave pré-definidas
-- ✅ Relatórios últimos 7 dias
-- ✅ 1 perfil de criança
-- ❌ Sem IA
-- ❌ Sem exportação de relatórios
-
-**Premium (R$ 19,90/mês ou R$ 199/ano)**:
-- ✅ Bloqueio ilimitado + IA semântica
-- ✅ Relatórios históricos completos (12 meses)
-- ✅ 3 perfis de crianças
-- ✅ Exportação PDF/CSV
-- ✅ Alertas via email/WhatsApp
-- ✅ Suporte prioritário (< 12h)
-
-**Enterprise (R$ 49,90/mês ou sob consulta)**:
-- ✅ Tudo do Premium
-- ✅ 10+ perfis
-- ✅ Dashboard centralizado (pais + escola)
-- ✅ API para integração customizada
-- ✅ Gerente de conta dedicado
-
-##### Projeção Financeira (12 meses)
-| Mês | Usuários Free | Conversão Premium | MRR | ARR |
-|-----|---------------|-------------------|-----|-----|
-| 1   | 500           | 5% (25)           | R$ 497,50 | - |
-| 3   | 2.000         | 7% (140)          | R$ 2.786 | - |
-| 6   | 5.000         | 10% (500)         | R$ 9.950 | R$ 119.400 |
-| 12  | 12.000        | 12% (1.440)       | R$ 28.656 | R$ 343.872 |
-
-**Churn esperado**: 15% ao mês (média SaaS B2C)  
-**LTV/CAC alvo**: 3:1 (Lifetime Value / Customer Acquisition Cost)
-
-#### 5.  Expansão Técnica
-**Prazo**: 8-12 meses
-
-##### Multi-Plataforma
--  **Firefox Add-on** (Q3 2026)
-  - Adaptação do código (WebExtensions API compatível)
-  - Submissão ao Firefox Add-ons
-  
--  **Microsoft Edge** (Q3 2026)
-  - Reutilização direta do código Chrome
-  - Microsoft Edge Add-ons Store
-  
--  **Mobile App** (Q4 2026)
-  - React Native + Expo
-  - Sincronização via Firebase
-  - Features extras: GPS tracking (opcional), screen time limiter
-
-##### Funcionalidades Avançadas
--  **Integração com Roteadores**:
-  - Parceria com TP-Link, D-Link
-  - Bloqueio a nível de rede (toda casa protegida)
-  
--  **Modo Offline**:
-  - Regras locais quando sem internet
-  - Sincronização automática quando online
-  
--  **Gamificação**:
-  - Sistema de pontos por bom comportamento
-  - Recompensas: +30 min de tela, desbloqueio temporário de site
-  - Dashboard para crianças (transparência)
-  
--  **Time Limits**:
-  - Temporizador por site/categoria
-  - Exemplo: Máx 1h/dia de redes sociais
-  - Pausas obrigatórias (padrão 20-20-20)
-
-##### Tecnologias Emergentes
--  **Blockchain** (experimento):
-  - NFTs de "certificados de bom comportamento"
-  - Registros imutáveis de configurações (prova para custódia legal?)
-  
--  **Web3 Integration**:
-  - Wallet para recompensas em cripto educacional
-  - Smart contracts para parcerias com escolas
-
-</details>
+- [ ] **Expansão de Plataformas**
+  - Firefox Extension
+  - Edge Extension
+  - Safari Extension (WebKit)
 
 ---
 
 ##  Métricas de Sucesso (KPIs)
 
-### Curto Prazo 
+### Curto Prazo (✅ Completado)
+
 | Métrica | Meta | Alcançado | Status |
 |---------|------|-----------|--------|
-| Emails coletados | 50 | 127 | 🟢 +154% |
-| Visitas landing page | 100 | 342 | 🟢 +242% |
-| Bugs críticos | 0 | 0 | 🟢 100% |
-| Lighthouse Score | 90+ | 95 | 🟢 ✓ |
+| Emails coletados | 50 | **127** | 🟢 +154% |
+| Visitas landing page | 100 | **342** | 🟢 +242% |
+| Bugs críticos | 0 | **0** | 🟢 100% |
+| Lighthouse Score | 90+ | **95** | 🟢 ✓ |
+| **Arquivos no repositório** | **10** | **12** | 🟢 **+20%** |
 
-### Médio Prazo 
-| Métrica | Meta | Atual | Prazo |
-|---------|------|-------|-------|
-| Usuários beta ativos | 50 | 12 | 21/02/26 |
-| Taxa de retenção (30d) | 80% | - | 01/03/26 |
-| Avaliação média | 4.0★ | - | 28/02/26 |
-| Feedbacks coletados | 50 | 8 | 28/02/26 |
-| Acurácia detecção | 85% | 73% | 15/02/26 |
+### Médio Prazo ( Em Progresso)
 
-### Longo Prazo 
+| Métrica | Meta | Atual | Prazo | Status |
+|---------|------|-------|-------|--------|
+| Usuários beta ativos | 50 | 12 | 21/02/26 | 🟡 24% |
+| Taxa de retenção (30d) | 80% | - | 01/03/26 |  Pendente |
+| Avaliação média | 4.0★ | - | 28/02/26 |  Pendente |
+| Feedbacks coletados | 50 | 8 | 28/02/26 | 🟡 16% |
+| Acurácia detecção | 85% | 73% | 15/02/26 | 🟡 86% |
+| **Funcionalidades core** | **4** | **2** | **21/02/26** | 🟡 **50%** |
+
+### Longo Prazo
+
 | Métrica | Meta | Prazo |
 |---------|------|-------|
 | Instalações Chrome Store | 10.000 | Dez/2026 |
@@ -541,91 +207,151 @@ Descrição Completa (ver docs/chrome-store-description.md):
 ##  Stack Tecnológica Completa
 
 ### Frontend
-```yaml
-Linguagens:
-  - TypeScript 5.3+
-  - HTML5, CSS3
 
-Frameworks/Libraries:
-  - React 18.2 (interface da extensão)
-  - Tailwind CSS 3.4 (estilização)
-  - Framer Motion (animações)
-  - Chart.js (gráficos de relatórios)
-  - Lucide React (ícones)
+**Linguagens:**
+- TypeScript 5.3+
+- HTML5, CSS3
 
-Build Tools:
-  - Vite 5.0 (bundler)
-  - ESLint + Prettier (linting)
-  - TypeScript Compiler
-```
+**Frameworks/Libraries:**
+- React 18.2 (interface da extensão)
+- Tailwind CSS 3.4 (estilização)
+- Framer Motion (animações)
+- Chart.js (gráficos de relatórios)
+- Lucide React (ícones)
+- ** fast-levenshtein** (matching fuzzy de keywords)
+
+**Build Tools:**
+- Vite 5.0 (bundler)
+- ESLint + Prettier (linting)
+- TypeScript Compiler
 
 ### Backend & APIs
-```yaml
-Runtime:
-  - Node.js 20 LTS (futuro backend)
 
-APIs Externas:
-  - Anthropic Claude API (análise de IA)
-  - OpenAI GPT-4 (fallback)
-  - Chrome Extension APIs (Manifest V3):
-      - chrome.storage (dados locais)
-      - chrome.webRequest (interceptação)
-      - chrome.tabs (gerenciamento)
+**Runtime:**
+- Node.js 20 LTS (futuro backend)
 
-Database (futuro):
-  - PostgreSQL 16 (dados de usuários premium)
-  - Redis 7 (cache de análises IA)
-```
+**APIs Externas:**
+- ** Gemini Nano (Chrome Built-in AI)** - IA local, custo $0, disponível no Chrome 121+
+- Anthropic Claude API (fallback para análise de IA)
+- OpenAI GPT-4 (último recurso)
+- Chrome Extension APIs (Manifest V3):
+  - `chrome.storage` (dados locais)
+  - `chrome.webRequest` (interceptação)
+  - `chrome.tabs` (gerenciamento)
+  - `chrome.alarms` (tarefas agendadas)
+  - ** `chrome.aiOriginTrial`** (acesso ao Gemini Nano)
+
+**Database (futuro):**
+- PostgreSQL 16 (dados de usuários premium)
+- Redis 7 (cache de análises IA)
 
 ### DevOps & Infra
-```yaml
-Hospedagem:
-  - Vercel (landing page) - Gratuito
-  - Railway (backend futuro) - $5-20/mês
-  - Cloudflare (CDN + DDoS protection) - Gratuito
 
-CI/CD:
-  - GitHub Actions:
-      - Testes automatizados (Jest)
-      - Build da extensão
-      - Deploy da landing page
+**Hospedagem:**
+- Vercel (landing page) - Gratuito
+- Railway (backend futuro) - $5-20/mês
+- Cloudflare (CDN + DDoS protection) - Gratuito
 
-Monitoramento:
-  - Sentry (erros em produção) - Gratuito até 5k eventos/mês
-  - Google Analytics 4 (métricas de uso)
-  - Hotjar (heatmaps) - Trial 15 dias
+**CI/CD:**
+- GitHub Actions:
+  - Testes automatizados (Jest)
+  - Build da extensão
+  - Deploy da landing page
+  - Análise de código (SonarCloud)
 
-Segurança:
-  - Snyk (scan de vulnerabilidades)
-  - OWASP ZAP (testes de penetração)
-  - Let's Encrypt (SSL/TLS)
-```
+**Monitoramento:**
+- Sentry (erros em produção) - Gratuito até 5k eventos/mês
+- Google Analytics 4 (métricas de uso)
+- Hotjar (heatmaps) - Trial 15 dias
+
+**Segurança:**
+- Snyk (scan de vulnerabilidades)
+- OWASP ZAP (testes de penetração)
+- Let's Encrypt (SSL/TLS)
 
 ### Ferramentas de Desenvolvimento
-```yaml
-Design:
-  - Figma (protótipos de UI)
-  - Excalidraw (diagramas)
 
-Comunicação:
-  - Discord (comunidade beta)
-  - Notion (documentação interna)
-  - Linear (issue tracking)
+**Design:**
+- Figma (protótipos de UI)
+- Excalidraw (diagramas)
 
-Testes:
-  - Jest (testes unitários)
-  - Playwright (E2E)
-  - Lighthouse CI (performance)
-```
+**Comunicação:**
+- Discord (comunidade beta)
+- Notion (documentação interna)
+- Linear (issue tracking)
+
+**Testes:**
+- Jest (testes unitários)
+- Playwright (E2E)
+- Lighthouse CI (performance)
 
 ---
 
-## Gestão de Riscos
+##  Gestão de Riscos
 
-| # | Risco | Probabilidade | Impacto | Mitigação | Responsável |
-|---|-------|---------------|---------|-----------|-------------|
-| 1 | Falsos positivos frequentes irritam usuários | 🟡 Média | 🔴 Alto | Testes A/B com 3 níveis de sensibilidade + whitelist automática | Dev Lead |
-| 2 | Custo elevado de APIs IA ($800+/mês) | 🟢 Baixa | 🟡 Médio | Cache agressivo (7d TTL) + modelos locais TensorFlow.js | CTO |
-| 3 | Rejeição na Chrome Web Store | 🟡 Média | 🔴 Alto | Seguir guidelines ao pé da letra + pre-review com expert | Product Manager |
-| 4 | Baixa adoção inicial (< 500 usuários) | 🟡 Média | 🟡 Médio | Freemium generoso + marketing em comunidades de pais | Growth Hacker |
-| 5 | Processo legal por
+| # | Risco | Probabilidade | Impacto | Mitigação | Responsável | Status |
+|---|-------|---------------|---------|-----------|-------------|--------|
+| 1 | Falsos positivos frequentes irritam usuários | 🟡 Média | 🔴 Alto | Testes A/B com 3 níveis de sensibilidade + whitelist automática + **algoritmo fuzzy (Levenshtein)** | Dev Lead |  Ativo |
+| 2 | Custo elevado de APIs IA ($800+/mês) | 🟢 Baixa | 🟡 Médio | **Priorizar Gemini Nano (custo $0)** + cache agressivo (7d TTL) + modelos locais TensorFlow.js | CTO | ✅ Mitigado |
+| 3 | Rejeição na Chrome Web Store | 🟡 Média | 🔴 Alto | Seguir guidelines ao pé da letra + pre-review com expert | Product Manager |  Monitorando |
+| 4 | Baixa adoção inicial (< 500 usuários) | 🟡 Média | 🟡 Médio | Freemium generoso + marketing em comunidades de pais | Growth Hacker |  Ativo |
+| 5 | Processo legal por violação de privacidade | 🟢 Baixa | 🔴 Crítico | Compliance rigoroso (LGPD/COPPA) + auditoria externa | Legal Advisor | ✅ Mitigado |
+| 6 | Concorrência de players grandes (Google Family Link) | 🔴 Alta | 🟡 Médio | Foco em nicho (adolescentes) + features exclusivas (IA contextual) | CEO |  Estratégia definida |
+| 7 | ** Performance do navegador degradada** | 🟡 Média | 🔴 Alto | **Debounce 300ms** no listener de input + Web Workers para processamento pesado + lazy loading de keywords | Tech Lead |  Ativo |
+
+---
+
+##  Próximos Passos Imediatos (Esta Semana)
+
+### Prioridade ALTA 🔴
+
+1. **Implementar Listener de Input com Debounce**
+   - Arquivo: `content-scripts/content.ts`
+   - **🔧 Técnica**: Debounce de 300ms para evitar travar digitação
+   - Tempo estimado: 5h (inclui testes de performance)
+   - Blocker: Necessário para funcionalidade core
+
+2. **Criar Keyword Matcher com Fuzzy Matching**
+   - Arquivo: `content-scripts/keyword-matcher.ts`
+   - **🔧 Biblioteca**: Instalar `fast-levenshtein` via npm
+   - **🔧 Algoritmo**: Distância de edição ≤ 2 (detecta "drooga", "dr0ga")
+   - Tempo estimado: 8h (inclui lógica fuzzy + testes)
+   - Dependência: #1 acima
+
+3. **Testar em Ambiente Real**
+   - Carregar extensão no Chrome (modo desenvolvedor)
+   - Testar em 10 sites diferentes (YouTube, Twitter, Discord, etc.)
+   - **🔧 Monitorar**: Performance (CPU/RAM) usando Chrome DevTools
+   - Coletar logs de erro
+
+### Prioridade MÉDIA 🟡
+
+4. **Melhorar UI do Popup**
+   - Design no Figma
+   - Implementar em React
+   - Tempo estimado: 8h
+
+5. **Adicionar Testes Unitários**
+   - Cobertura mínima: 60%
+   - Usar Jest + Testing Library
+
+---
+
+##  Contato e Suporte
+
+- **Email**: suporte@shieldnet.com
+- **Discord**: [Comunidade Beta](#)
+- **GitHub Issues**: [Reportar Bug](#)
+- **Documentação**: [Wiki Completa](#)
+
+---
+
+##  Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+**Última Atualização**: 23/01/2026 - v0.2.1  
+**Responsável**: Kaylane Kimberly 
+**Status**: Sprint 2 Concluída | Sprint 3 em Andamento

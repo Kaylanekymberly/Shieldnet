@@ -8,7 +8,7 @@
 
 **Proteção Digital Inteligente para Crianças e Adolescentes**
 
-[🌐 Landing Page](#) • [📖 Documentação](#) • [🐛 Reportar Bug](#) • [💬 Discord Community](#)
+[🌐 Landing Page](https://shieldnetkay.my.canva.site) • [📖 Documentação](#) • [🐛 Reportar Bug](#) • [💬 Discord Community](#)
 
 ---
 
